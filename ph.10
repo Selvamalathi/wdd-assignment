@@ -1,0 +1,13 @@
+<?php
+$students = array(
+    "Alice" => 85,
+    "Bob" => 72,
+    "Charlie" => 90
+);
+foreach ($students as $name => $score) {
+    if ($score >= 85) $grade = "A";
+    elseif ($score >= 70) $grade = "B";
+    else $grade = "C";
+    echo "$name scored $score and got grade $grade.<br>";
+}
+?>
